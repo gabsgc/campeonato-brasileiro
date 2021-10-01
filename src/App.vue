@@ -1,18 +1,18 @@
 <template>
   <v-app>
       <AppTopBar/>
-      <Inicio/>
+      <v-main>
+        <router-view/>
+      </v-main>
   </v-app>
 </template>
 
 <script>
-import Inicio from './components/Inicio'
 import AppTopBar from './components/shared/AppTopBar'
 
 export default {
   name: 'App',
   components: {
-    Inicio,
     AppTopBar
   }
 };
